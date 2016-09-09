@@ -36,6 +36,13 @@
 
 		var counter = byId('counter'),
 			msg = ts.toHTML('strong', empty);
+			var msgNew = '';
+					$(msg).filter('strong').each(function(){
+					var a = $(this).html().split(' ');
+					msgNew += "<div><strong>"+a[0]+"</strong> ";
+					msgNew += "<em>"+a[1]+"</em></div> ";
+					});
+					msg = msgNew;
 
 	
 		counter.innerHTML = msg;
