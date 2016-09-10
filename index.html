@@ -2,22 +2,40 @@
 layout: default
 ---
 
-<div class="starter-template">
-  <h1 id="counter">0 months, 0 days, 0 minutes and 0 seconds</h1>
-  <hr>
-  <br />
-  <br />
-  <br />
-  <br />
+<div class="wrapper">
+  <div class="content">
+    <h1 id="counter">0 months, 0 days, 0 minutes and 0 seconds</h1>
 
-  <h3>What can I do to help?</h3>
-  <p>
-    <div class="list-group">
+    <div class="action">
+    <h2>What can I do to help?</h2>
+    <div class="card-columns">
       {% for link in site.data.links%}
-      <a href="{{link.url}}" class="list-group-item ">{{link.title}}</a>
+        <a href="{{link.url}}">
+          <div class="card" style="background-image: url('{{link.image}}')">
+            <div class="card-block">
+              <h4 class="card-title">{{link.title}}</h4>
+            </div>
+            <p>{{link.text}}</p>
+          </div>
+        </a>
       {% endfor %}
     </div>
-  </p>
-  <h3>Let's do it!</h3>
+    <h2>Let's do it!</h2>
+    <footer>
+      <p>
+        <a class="twitter-share-button"
+           href="https://twitter.com/share"
+           data-size="large"
+           data-url="http://2016.ninja"
+           data-related="twitterapi,twitter"
+           data-hashtags="ImWithHer,Vote"
+           data-text="The election is coming - Get involved now!">
+           Tweet this
+        </a>
+      </p>
+      <p>
+        <a href="http://twitter.com/harper">@harper</a> <a href="http://twitter.com/aaronsalmon">@aaronsalmon</a>
+      </p>
+    </footer>
+  </div>
 </div>
-
