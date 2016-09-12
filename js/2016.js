@@ -80,7 +80,7 @@ function update2() {
 		var tweetBtn = $('<a></a>')
 			.addClass('twitter-share-button')
 			.attr('href', 'http://twitter.com/share')
-			.attr('data-size', 'large"')
+			.attr('data-size', 'large')
 			.attr('data-url', 'http://2016.ninja')
 			.attr('data-related', 'HillaryClinton,harper')
 			.attr('data-hashtags', 'ImWithHer,Vote')
